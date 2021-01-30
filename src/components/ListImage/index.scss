@@ -9,11 +9,11 @@
   height: 100%;
   border: 0px!important;
   background-color: transparent!important;
-  .card-custom__body {
+  &__body {
     border: 0px;
     border-radius: 5px;
-    padding: 0px;
-    min-height: 250px;
+    padding: 0px!important;
+    min-height: 250px!important;
     max-height: 250px;
     text-align: center;
     @media screen and (max-width: $screen-sm) {
@@ -40,14 +40,14 @@
       }
     }
   }
-  .card-custom__image, img {
+  &__image, img {
     width: 100%;
     height: 100%;
   }
-  .card-custom__image {
+  &__image {
     cursor: pointer;
   }
-  .card-custom__title {
+  &__title {
     font-size: 13px;
     text-align: center;
     margin-top: 10px;
