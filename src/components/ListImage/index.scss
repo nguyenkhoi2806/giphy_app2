@@ -1,0 +1,55 @@
+@import "../../assets/scss/responsive.scss";
+
+.card-deck {
+    align-content: center;
+    justify-content: center;
+}
+
+.card-custom {
+  height: 100%;
+  border: 0px!important;
+  background-color: transparent!important;
+  .card-custom__body {
+    border: 0px;
+    border-radius: 5px;
+    padding: 0px;
+    min-height: 250px;
+    max-height: 250px;
+    text-align: center;
+    @media screen and (max-width: $screen-sm) {
+      min-height: unset;
+      max-height: 100px;
+      height: 100%;
+    }
+    .spinner {
+      position: absolute;
+      top: 40%;
+      left: 45%;
+      @media screen and (max-width: $screen-sm) {
+        position: relative;
+        min-height: 150px;
+        top: 40%;
+        left: 38%;
+        .css-6nc57b {
+          position: absolute;
+          width: 35px;
+          height: 35px;
+          left: 0%;
+          top: 0%;
+        }
+      }
+    }
+  }
+  .card-custom__image, img {
+    width: 100%;
+    height: 100%;
+  }
+  .card-custom__image {
+    cursor: pointer;
+  }
+  .card-custom__title {
+    font-size: 13px;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
