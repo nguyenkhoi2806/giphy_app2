@@ -6,15 +6,17 @@ const ItemImage = ({ item }) => {
   if (!item) return null;
   return (
     <div className="col-xl-3 col-md-4 col-6">
-      <div className="card card-custom m-0">
-        <Image
-          src={item.images.downsized.url}
-          className="card-img-top card-custom__image"
-          alt={item.id}
-          preview={item.images.original.url}
-        />
-        <div className="card-body card-custom__body">
-          <p className="card-text card-custom__title">{item.title}</p>
+      <div className="col card-custom p-0">
+        <div className="card card-custom_children  m-0  h-100">
+          <Image
+            src={item.images.downsized.url}
+            className="card-img-top card-custom__image"
+            alt={item.id}
+            preview={item.images.original.url}
+          />
+          <div className="card-body card-custom__body">
+            <p className="card-text card-custom__title">{item.title}</p>
+          </div>
         </div>
       </div>
     </div>

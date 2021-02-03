@@ -14,7 +14,6 @@ const Image = (props) => {
       <BounceLoader size={35} color="#1abc9c" />
     </div>
   );
-
   return (
     <>
       {openFullScreen && <Lightbox mainSrc={props.preview} onCloseRequest={() => setOpenFullScreen(false)}/>}
