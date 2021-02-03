@@ -8,36 +8,29 @@
 .card-custom {
   height: 100%;
   border: 0px!important;
+  border-radius: 5px;
+  min-height: 250px;
+  max-height: 250px;
   background-color: transparent!important;
+  @media screen and (max-width: $screen-sm) {
+    min-height: auto!important;
+    max-height: auto!important;
+  }
+  .spinner {
+    text-align: center;
+    min-height: 250px;
+    padding-top: 40%;
+    @media screen and (max-width: $screen-sm) {
+      min-height: 150px;
+    }
+  }
   &__body {
     border: 0px;
-    border-radius: 5px;
     padding: 0px!important;
-    min-height: 250px!important;
-    max-height: 250px;
     text-align: center;
     @media screen and (max-width: $screen-sm) {
       min-height: unset;
-      max-height: 100px;
       height: 100%;
-    }
-    .spinner {
-      position: absolute;
-      top: 40%;
-      left: 45%;
-      @media screen and (max-width: $screen-sm) {
-        position: relative;
-        min-height: 150px;
-        top: 40%;
-        left: 38%;
-        .css-6nc57b {
-          position: absolute;
-          width: 35px;
-          height: 35px;
-          left: 0%;
-          top: 0%;
-        }
-      }
     }
   }
   &__image, img {

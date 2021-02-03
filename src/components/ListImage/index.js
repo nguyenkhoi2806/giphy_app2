@@ -7,15 +7,15 @@ const ItemImage = ({ item }) => {
   return (
     <div className="col-xl-3 col-md-4 col-6">
       <div className="card card-custom m-0">
+        <Image
+          src={item.images.downsized.url}
+          className="card-img-top card-custom__image"
+          alt={item.id}
+          preview={item.images.original.url}
+        />
         <div className="card-body card-custom__body">
-          <Image
-            src={item.images.downsized.url}
-            className="card-custom__image"
-            alt={item.id}
-            preview={item.images.original.url}
-          />
+          <p className="card-text card-custom__title">{item.title}</p>
         </div>
-        <div className="card-text card-custom__title">{item.title}</div>
       </div>
     </div>
   );
@@ -49,7 +49,7 @@ const ListImage = (props) => {
   });
 
   return newImageList.map((items, index) => (
-    <div className="row card-deck mb-3" key={index}>
+    <div className="row card-deck mb-5" key={index}>
       {items.map((item, keyItem) => (
         <ItemImage key={keyItem} item={item} />
       ))}
