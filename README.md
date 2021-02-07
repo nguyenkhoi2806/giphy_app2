@@ -1,14 +1,13 @@
-simple JS application.
-Pull from the Giphy trending endpoint
-• GET https://api.giphy.com/v1/gifs/trending
-• Setup account - GIPHY for Developers | API Documentation
-https://developers.giphy.com/docs/
-Design should look like image attached below:
-• Adapts to browser width
-• Images in grid
-o Desktop row of 4 images
-o Tablet row of 3 images
-o Mobile row of 2 images
-• When user clicks or taps on image, show image full screen
-• Only load maximum 24 images at a time
-Will need a way for users to load 24
+Simple React JS application.</br>
+Pull from the Giphy trending endpoint</br>
+• GET https://api.giphy.com/v1/gifs/trending</br>
+• Setup account - GIPHY for Developers | API Documentation</br>
+   https://developers.giphy.com/docs/
+Design should look like image attached below:</br>
+• Adapts to browser width</br>
+• Images in grid</br>
+ 	- Desktop row of 4 images</br>
+  - Tablet row of 3 images</br>
+  - Mobile row of 2 images</br>
+• When user clicks or taps on image, show image full screen</br>
+• Only load maximum 24 images at a time</br>
